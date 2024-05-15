@@ -1,9 +1,9 @@
-from src.observer import Apps
+from src.observer import weather_maker
 
 
 def subscribe(app):
-    Apps.add(app)
+    weather_maker.attach(app)
 
 
 def unsubscribe(app):
-    Apps.remove(app)
+    weather_maker.detach(app)

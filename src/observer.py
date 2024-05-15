@@ -58,13 +58,5 @@ class Apps(IApp):
         weather = weather_maker.get_weather(app.city)
         mailing(app, weather)
 
-    @staticmethod
-    def add(app):
-        weather_maker.attach(app)
-
-    @staticmethod
-    def remove(app):
-        weather_maker.detach(app)
-
 
 weather_maker = WeatherMaker()
